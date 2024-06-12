@@ -8,7 +8,7 @@ function zimetuzcanvas() {
   ctx.fillRect(10, 10, 200, 200);
 }
 
-function kascits() {
+function Taisnstūris() {
   var canvas = document.getElementById("zimejums");
   var ctx = canvas.getContext("2d");
   ctx.strokeStyle="red"; //formas krāsa
@@ -44,5 +44,4 @@ function teksts() {
   ctx.fillStyle="blue";
   ctx.font="40px Arial";
   ctx.fillText("Šis ir JavaScript teksts!", 50, 350);
-  ctx.strokeStyle="black";
 }
