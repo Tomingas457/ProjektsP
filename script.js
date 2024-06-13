@@ -8,11 +8,13 @@ function zimetuzcanvas() {
   ctx.fillRect(10, 10, 200, 200);
 }
 
-function Taisnstūris() {
+function Taisnsturis() {
   var canvas = document.getElementById("zimejums");
   var ctx = canvas.getContext("2d");
   ctx.strokeStyle="red"; //formas krāsa
+  ctx.lineWidth = 20;
   ctx.strokeRect(220, 10, 200, 200); //Līnijas krāsa apkārt
+  
 }
 
 function aplis() {
@@ -27,7 +29,7 @@ function aplis() {
   ctx.fill(); //lai parādītu iekšējo krāsu
 }
 
-function līnija() {
+function linija() {
   var canvas = document.getElementById("zimejums");
   var ctx = canvas.getContext("2d");
   ctx.beginPath();

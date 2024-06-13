@@ -4,74 +4,84 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Mana mājas lapa</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 
 <body>
   <header>
-  <h1>Sveiki, pasaule!</h1>
+    <nav class="topnav"> <!-- "nav" nozīmē navigācija-->
+      <a href="index.html" class="active">Sākums</a> 
+      <a href="kontakti.html"> Kontakti</a>
+      <a href="parmums.html"> Par mums</a>
+    </nav>
   </header>
   
-  <hr>
+  <aside class="sidebar"> <!-- #priekš staigāšanas pa sekcijām -->
+    <a href="#saturs">Saturs</a>
+    <a href="#tabula">Tabula</a>
+  </aside>
   
-  <main>
-    <section id="content">
-  <p>Šis ir mans pirmais HTML!</p>
-  <image src="bilde.jpg" width="200px">
+<main>
+  
+  <h1>Sveiki, pasaule!</h1>
+  
+    <section id="saturs">
+      <p>Šis ir mans pirmais HTML!</p>
+      <image src="bilde.jpg" width="200px">
     </section>
     
     <br>
-    <section id="content">
-    <ol type="A" start="1">
-      <li>Pirmais</li>
-      <li>Otrais</li>
-      <li>Trešais</li>
-    </ol>
-    <ul type="square">
-      <li>Pirmais</li>
-      <li>Otrais</li>
-      <li>Trešais</li>
-    </ul>
+    
+    <section id="saturs">
+      <ol type="A" start="1">
+        <li>Pirmais</li>
+        <li>Otrais</li>
+        <li>Trešais</li>
+      </ol>
+      <ul type="square">
+        <li>Pirmais</li>
+        <li>Otrais</li>
+        <li>Trešais</li>
+      </ul>
     <a href="parmums.html">Par mums</a>
       <br>
     <a href="kontakti.html">Sazināties</a>
-    <table border="1">
     </section>
 
     <section id=tabula>
-      <tr>
-        <td>1. rinda 1. kolonna</td>
-        <td>1. rinda 2. kolonna</td>
-        <td>1. rinda 3. kolonna</td>
-      </tr>
-      <tr>
-        <td>2. rinda 1. kolonna</td>
-        <td>2. rinda 2. kolonna</td>
-        <td>2. rinda 3. kolonna</td>
-      </tr>
-      <tr>
-        <td>3. rinda 1. kolonna</td>
-        <td>3. rinda 2. kolonna</td>
-        <td>3. rinda 3. kolonna</td>
-      </tr>
-    </table>
+      <table border="1">
+        <tr>
+          <td>1. rinda 1. kolonna</td>
+          <td>1. rinda 2. kolonna</td>
+          <td>1. rinda 3. kolonna</td>
+        </tr>
+        <tr>
+          <td>2. rinda 1. kolonna</td>
+          <td>2. rinda 2. kolonna</td>
+          <td>2. rinda 3. kolonna</td>
+        </tr>
+        <tr>
+          <td>3. rinda 1. kolonna</td>
+          <td>3. rinda 2. kolonna</td>
+          <td>3. rinda 3. kolonna</td>
+        </tr>
+      </table>
     </section>
     
     <section id="canva">
-      <canvas id="zimejums" width="500" height="400">
-        </canvas><br>
-      <button onclick="Taisnstūris()">Parādi taisnstūri</button>
+      <canvas id="zimejums" width="500" height="400"></canvas><br>
+      <button onclick="Taisnsturis()">Parādi taisnstūri</button>
       <button onclick="aplis()">Parādīt apli!</button>
-      <button onclick="līnija()">Parādīt līniju!</button>
+      <button onclick="linija()">Parādīt līniju!</button>
       <button onclick="teksts()">Parādīt tekstu!</button>
     </section>
-  </main>
+</main>
   
-  <footer>
-    &copy; Mana firma
-  </footer>
+<footer>
+   &copy; Mana firma
+</footer>
   
   <script src="script.js"></script>
 </body>
