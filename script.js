@@ -47,3 +47,14 @@ function teksts() {
   ctx.font="40px Arial";
   ctx.fillText("Šis ir JavaScript teksts!", 50, 350);
 }
+
+function aprekins() {
+  let vards = document.getElementById("vards").value;
+  let uzvards = document.getElementById("uzvards").value;
+  let pirmais = parseFloat(document.getElementById("a").value); /* pirmais skaitlis */
+  let otrais = parseFloat(document.getElementById("b").value); /* otrai skaitlis */
+  let sum = pirmais * otrais;
+  console.log("Tevi sauc: " + vards + uzvards + " Atbilde ir:" + sum);
+  document.getElementById("rezultats").innerHTML = "Tevi sauc: " + vards +" "+ uzvards + "<br> Tu ievadīji a vērtību: " + pirmais + " <br> un otrā vērtība "+ otrais +"<br><br> Atbilde ir: " + sum;
+}
+
