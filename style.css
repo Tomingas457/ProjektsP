@@ -3,13 +3,14 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #e6e6e6; /* fona krāsa visam aizmugurē*/
-  font-family: Sofia;
+  background-color: #ffffff; /* fona krāsa visam aizmugurē*/
+  background-image: linear-gradient(red, yellow, blue);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #f9bebe;
+  background-color: #4ADEDE;
   margin-top: 0px;
   display: flex;
   justify-content: space-around;
@@ -22,19 +23,19 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: left;
-  color: #f73b3b;
+  color: #1E2F97;
   text-decoration: none;
   font-size: 20px;
 }
 
 .topnav a:hover {
   background-color: #ffffff;
-  color: #f73b3b;
+  color: #1E2F97;
   transition: background-color 0.2s ease;
 }
 
 .topnav a.active {
-  background-color: #f73b3b;
+  background-color: #797EF6;
   color: #ffffff;
 }
 
@@ -44,20 +45,20 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #f9bebe;
+  background-color: #4ADEDE;
 }
 
 .sidebar a {
   padding: 10px;
   text-decoration: none;
   font-size: 30px;
-  color: #f73b3b;
+  color: #1E2F97;
   display: block;
 }
 
 .sidebar a:hover {
-  background-color: #ffffff;
-  color: #f73b3b;
+  background-color: #797EF6;
+  color: #ffffff;
   transition: background-color 0.2s ease;
 }
 
@@ -67,8 +68,8 @@ main {
 }
 
 footer {
-  background-color: #f9bebe;
-  color: #f73b3b;
+  background-color: #4ADEDE;
+  color: #1E2F97;
   text-align: center;
   padding: 10px;
   margin-top: 20px;
@@ -77,9 +78,9 @@ footer {
 }
 
 button {
-  background-color: #f73b3b;
+  background-color: #797EF6;
   color: #ffffff;
-  border: none;
+  border: #1E2F97;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
@@ -90,22 +91,22 @@ button {
 }
 
 button:hover {
-  background-color: #ffffff;
-  color: #f73b3b;
+  background-color: #1E2F97;
+  color: #ffffff;
 }
 
 h1 {
-  color: #f73b3b; /* virsraksta krāsa */
-  font-family: Sofia;
-  font-size: 39px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 50px;
 }
+
 p {
-  color: #f73b3b; /* paragrāfa krāsa */
+  color: #1E2F97; /* paragrāfa krāsa */
   font-size: 20px;
 }
 
 #saturs { /* # izmanto, lai aprakstītu id */
-  background-color: #f9bebe;
+  background-color: #4ADEDE;
   padding: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -114,7 +115,7 @@ p {
 }
 
 #saturs p { /* var atsevišķi nomainīt krāsu */
-  color: #9655f7;
+  color: #1E2F97;
 }
 
 #saturs img {
@@ -123,8 +124,13 @@ p {
   margin: 0 auto; /* centrēt attēlu */
 }
 
+#saturs iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 #tabula {
-  background-color: #f9bebe;
+  background-color: #4ADEDE;
   padding: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -136,21 +142,23 @@ p {
   width: 100%;
   border-collapse: separate;
   background-color: #ffffff;
-  border: 3px solid #f73b3b;
+  border: 3px solid #797EF6;
   text-align: center;
   padding: 10px;
 }
 
 #tabula tr:nth-child(1) { /* tr nozīmē atbulas rindas */
-  background-color: #f73b3b;
+  background-color: #1E2F97;
+  color:white
 }
 
 #tabula tr:nth-child(3) {
-  background-color: #f73b3b;
+  background-color: #1E2F97;
+  color:white
 }
 
 #canva {
-  background-color: #f9bebe;
+  background-color: #4ADEDE;
   padding: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -159,6 +167,6 @@ p {
 }
 
 #saturs p {
-  color: #f73b3b;
+  color: #1E2F97;
   font-size: 20px;
 }
