@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function() {
   zimetuzcanvas();
 }
 function zimetuzcanvas() {
@@ -58,3 +58,48 @@ function aprekins() {
   document.getElementById("rezultats").innerHTML = "Tevi sauc: " + vards +" "+ uzvards + "<br> Tu ievadīji a vērtību: " + pirmais + " <br> un otrā vērtība "+ otrais +"<br><br> Atbilde ir: " + sum;
 }
 
+function atjaunotIetvaru(which) {
+  document.getElementById("lapas_saturs").innerHTML = '<object id="lapas" type="text/html" data="' + which.href + '"></object>';
+}
+
+let age = 18;
+
+if (age < 18) {
+  console.log("Nepilngadīgs");
+} else if (age >= 18 && age < 65 || age<=10) { /* && ir "and" un || ir "or"*/
+  console.log("Pilngadīgs");
+} else {
+  console.log("Pensionārs");
+}
+
+for(let i = 0; i <= 10; i++) {
+  console.log(i);
+  if (i==5) {
+    console.log("Cipars ir pieci");
+  }
+}
+
+let j = 0;
+while (j <= 10) {
+  console.log("Vērtības: " +j);
+  j++;
+}
+
+let k = 8;
+
+do {
+  console.log("Do while: " +k);
+  k++;
+} while(k<10)
+
+let skaitlis = [6,3,6,31,78,9];
+
+for (let i = 0; i < skaitlis.length; i++) {
+  console.log(skaitlis[i]);
+  if (i==2) {
+    console.log("ir");
+  }
+  if (skaitlis[i] == 31){
+    console.log("IRRR");
+  }
+}

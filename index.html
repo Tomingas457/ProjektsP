@@ -14,8 +14,8 @@
   <header>
     <nav class="topnav"> <!-- "nav" nozīmē navigācija-->
       <a href="index.html" class="active">Sākums</a> 
-      <a href="kontakti.html"> Kontakti</a>
-      <a href="parmums.html"> Par mums</a>
+      <a href="kontakti.html" onclick="atjaunotIetvaru(this); return false;"> Kontakti</a>
+      <a href="parmums.html" onclick="atjaunotIetvaru(this); return false;"> Par mums</a>
     </nav>
   </header>
   
@@ -24,7 +24,7 @@
     <a href="#tabula">Tabula</a>
   </aside>
   
-<main>
+<main id="lapas_saturs">
   
   <h1 style="color:#1E2F97;">Sveiki, pasaule!</h1>
 
