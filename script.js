@@ -1,6 +1,20 @@
+function atjaunotIetvaru(which) {
+  document.getElementById("lapas_saturs").innerHTML = '<object id="lapas" type="text/html" data="' + which.href + '"></object>';
+}
+
 window.onload = function() {
   zimetuzcanvas();
-}
+    var navLinks = document.querySelectorAll('.topnav a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+  }
+
 function zimetuzcanvas() {
   var canvas = document.getElementById("zimejums");
   var ctx = canvas.getContext("2d");
@@ -53,13 +67,29 @@ function aprekins() {
   let uzvards = document.getElementById("uzvards").value;
   let pirmais = parseFloat(document.getElementById("a").value); /* pirmais skaitlis */
   let otrais = parseFloat(document.getElementById("b").value); /* otrai skaitlis */
+  if (!vards.match(/^\S[a-zA-Zā-žĀ-Ž\s]+$/)) {
+    alert("Vārds satur nederīgas rakstzīmes!");
+    return;
+  }
+  
+  if (!uzvards.match(/^\S[a-zA-Zā-žĀ-Ž\s]+$/)) {
+    alert("Uzvārds nav ievadīts pareizi!");
+    return;
+  }
+  
+  if (pirmais === "" || otrais === "" || isNaN(pirmais) || isNaN(otrais)) {
+    alert("Lūdzu ievadi skaitli");
+    return
+  }
+  
+  if (!Number.isInteger(Number(pirmais)) || !Number.isInteger(Number(otrais))) {
+    alert("Ievadi veselu skaitli!");
+    return
+  }
+  
   let sum = pirmais * otrais;
   console.log("Tevi sauc: " + vards + uzvards + " Atbilde ir:" + sum);
   document.getElementById("rezultats").innerHTML = "Tevi sauc: " + vards +" "+ uzvards + "<br> Tu ievadīji a vērtību: " + pirmais + " <br> un otrā vērtība "+ otrais +"<br><br> Atbilde ir: " + sum;
-}
-
-function atjaunotIetvaru(which) {
-  document.getElementById("lapas_saturs").innerHTML = '<object id="lapas" type="text/html" data="' + which.href + '"></object>';
 }
 
 let age = 18;
